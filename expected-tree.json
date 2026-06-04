@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "pm": "poetry",
+  "pm_version_tested": "1.8.0",
+  "source_file": "https://github.com/mend-detection-qa/poetry_constraints-txt-multi-pin/blob/main/pyproject.toml",
+  "root": {
+    "name": "poetry-constraints-txt-multi-pin",
+    "version": "0.1.0",
+    "dependencies": [
+      {
+        "name": "requests",
+        "version": "2.32.0",
+        "scope": "main",
+        "direct": true,
+        "dependencies": [
+          {
+            "name": "certifi",
+            "version": "2026.4.22",
+            "scope": "main",
+            "direct": false,
+            "dependencies": []
+          },
+          {
+            "name": "charset-normalizer",
+            "version": "3.4.7",
+            "scope": "main",
+            "direct": false,
+            "dependencies": []
+          },
+          {
+            "name": "idna",
+            "version": "3.7",
+            "scope": "main",
+            "direct": false,
+            "mediation": "Pinned by Mend from constraints.txt at scan time (idna==3.7). poetry.lock (committed) shows idna==3.15 because Poetry does NOT read constraints.txt natively. Mend applies the constraint independently of the lockfile. One of two constraints exercised by this probe.",
+            "dependencies": []
+          },
+          {
+            "name": "urllib3",
+            "version": "1.26.18",
+            "scope": "main",
+            "direct": false,
+            "mediation": "Pinned by Mend from constraints.txt at scan time (urllib3==1.26.18). poetry.lock (committed) shows urllib3==2.7.0 because Poetry does NOT read constraints.txt natively. Mend applies the constraint independently of the lockfile. Two of two constraints exercised by this probe.",
+            "dependencies": []
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "total_packages": 5,
+    "direct_dependencies": 1,
+    "transitive_dependencies": 4,
+    "constraint_applied": "urllib3==1.26.18 AND idna==3.7 via constraints.txt (overlaid on Poetry-resolved tree)",
+    "scopes_included": ["main"],
+    "notes": "Two simultaneous transitive pins. poetry.lock diverges from scan output at BOTH urllib3 (lock=2.7.0, scan=1.26.18) AND idna (lock=3.15, scan=3.7). Constraint-iteration code path."
+  }
+}
