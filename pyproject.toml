@@ -6,7 +6,7 @@ authors = ["Mend QA <qa@mend.io>"]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-requests = "2.32.0"
+requests = "2.32.4"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
