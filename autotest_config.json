@@ -38,8 +38,8 @@
       },
 
       "expected_dependency_pairs": [
-        {"artifactId": "urllib3", "version": "1.26.18", "groupId": "urllib3"},
-        {"artifactId": "idna", "version": "3.7", "groupId": "idna"}
+        {"artifactId": "urllib3", "version": "2.7.0", "groupId": "urllib3"},
+        {"artifactId": "idna", "version": "3.18", "groupId": "idna"}
       ]
     },
 
